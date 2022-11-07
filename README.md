@@ -1,5 +1,5 @@
 # R-Shiny-WebApp
-This is an R shiny webapp for visualising data.
+This is an R shiny webapp for visualising  COVID-19 movment data.
 This was part of a university assesment. 
 
 
