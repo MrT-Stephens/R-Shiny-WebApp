@@ -40,7 +40,7 @@ ui <- fluidPage(theme = bs_theme(version = 4, bootswatch = "flatly"),
                p(h6("More infomation about the data set used is avalible at: ", 
                  tags$a(href="https://support.google.com/covid19-mobility/answer/9824897?hl=en&ref_topic=9822927", strong("Click Here!")))),
                p(h6("All of the code is avalible at GitHub: ", 
-                    tags$a(href="https://github.com/MrT-Stephens/R-Shiny-WebApp", strong("Click Here!")))),
+                    tags$a(href="https://github.com/MrT-Stephens/R-Shiny-WebApp-Uni-Assesment", strong("Click Here!")))),
                img(src = "rshinylogo.png", height = 150, width = 450, align = "right"),
              )
            )
