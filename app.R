@@ -21,7 +21,8 @@ ui <- fluidPage(theme = bs_theme(version = 4, bootswatch = "flatly"),
            sidebarLayout(
              sidebarPanel(
                h6(strong(radioButtons(inputId = "dv", label = h4(strong("Category:")),
-                           choices = c("Retail_Recreation", "Grocery_Pharmarcy", "Parks", "Transit_Stations", "Workplaces", "Residential"),
+                           choices = c("Retail Recreation" = "Retail_Recreation" , "Grocery Pharmarcy" = "Grocery_Pharmarcy", 
+                                       "Parks", "Transit Stations" = "Transit_Stations", "Workplaces", "Residential"),
                            selected = "Grocery_Pharmarcy"))),
                h6(strong(checkboxGroupInput(inputId = "provinces", h4(strong("Province(s):")),
                            choices = levels(mobility$Province),
@@ -45,10 +46,10 @@ ui <- fluidPage(theme = bs_theme(version = 4, bootswatch = "flatly"),
              )
            )
            ),
-  tabPanel(h4(strong("Table of contents!")),
+  tabPanel(h4(strong("Data Table!")),
            
            # Application title.
-           titlePanel(h1(strong("COVID-19 Data - Table of contents!"))),
+           titlePanel(h1(strong("COVID-19 Data - Data Table!"))),
            h5(strong("By: Tom Stephens (30048598)")),
            br(),
            h6(DT::dataTableOutput(outputId = "table")),
